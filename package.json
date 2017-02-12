@@ -1,0 +1,15 @@
+{
+  "name": "exporing-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dinesh Bogolu",
+  "license": "ISC",
+  "devDependencies": {
+    "tslint": "^4.4.2",
+    "typescript": "^2.1.6"
+  }
+}
