@@ -64,5 +64,6 @@ jspm_packages
 !.vscode/launch.json
 !.vscode/extensions.json
 
-# Project folders
+# Project folders and files
 dist
+/yarn.lock
