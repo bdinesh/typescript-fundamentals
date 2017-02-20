@@ -13,12 +13,23 @@ function enumerable(isEnumerable: boolean) {
     };
 }
 
+function prop(obj, name){
+    console.log("Property decorator", obj, name);
+}
+
+function param(obj, name, index){
+    console.log("Parameter decorator", obj, name, index);
+}
+
 @Component({
     id: 'app'
 })
 class App {
+    @prop
+    static version: string
+
     @enumerable(false)
-    init(element: HTMLElement | null): void {
+    init(@param element: HTMLElement | null): void {
         setInterval(() => {
             if (element) {
                 element.innerHTML = generateRandomId({
@@ -30,7 +41,7 @@ class App {
     }
 }
 
-for(let key in App.prototype){
+for (let key in App.prototype) {
     console.log(key);
 }
 
